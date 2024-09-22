@@ -1,0 +1,6 @@
+gen/*
+!gen/.gitkeep
+
+node_modules/
+
+config.json

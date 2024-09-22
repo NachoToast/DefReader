@@ -1,0 +1,30 @@
+{
+    "name": "nachotoastium-website",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "author": {
+        "name": "NachoToast",
+        "url": "https://github.com/NachoToast"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NachoToast/DefReader"
+    },
+    "scripts": {
+        "start": "tsx src/index.ts",
+        "typecheck": "cd src && tsc",
+        "lint": "eslint src --max-warnings=0",
+        "check-all": "pnpm typecheck && pnpm lint",
+        "dev": "tsx --watch-path=src --disable-warning=ExperimentalWarning src/index.ts"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.11.0",
+        "@types/node": "^22.5.5",
+        "eslint": "^9.11.0",
+        "prettier": "^3.3.3",
+        "tsx": "^4.19.1",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.6.0"
+    }
+}
